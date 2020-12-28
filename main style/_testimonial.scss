@@ -195,23 +195,37 @@
     }
   }
   .our_partners {
-    position: relative;
-    justify-content: center;
-    display: flex; 
-    // margin-top: 15%;
+  //   position: relative;
+  //   justify-content: center;
+  //   display: flex; 
+  //   // margin-top: 15%;
+  //   width: 90%;
+  // margin: auto;
     .our_container {
-      flex-wrap: wrap;
-      justify-content: center;
+      // display: flex;
+      // justify-content: center;
+      margin: auto;
+      padding: 0 50px;
+      width: 70%;
+      max-width: 1200px;
+      min-width: 300px;
+      overflow: hidden;
+      
       .our_item {
         margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         &:not(:last-child){
-          margin-right: 60px;
+          margin-right: 55px;
         }
-        .our_link {
-          img {
-            width: 100%;
-          }
-        }
+        // a.our_link {
+
+        //   img {
+        //     max-width: 100%;
+        //     height: auto;
+        //   }
+        // }
       } 
      }
    

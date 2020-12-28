@@ -1263,34 +1263,30 @@ a:visited {
   padding: 0 10%;
 }
 
-#testimonial .our_partners {
-  position: relative;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 #testimonial .our_partners .our_container {
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  margin: auto;
+  padding: 0 50px;
+  width: 70%;
+  max-width: 1200px;
+  min-width: 300px;
+  overflow: hidden;
 }
 
 #testimonial .our_partners .our_container .our_item {
   margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #testimonial .our_partners .our_container .our_item:not(:last-child) {
-  margin-right: 60px;
-}
-
-#testimonial .our_partners .our_container .our_item .our_link img {
-  width: 100%;
+  margin-right: 55px;
 }
 
 #testimonial .partners_title {

@@ -342,7 +342,7 @@ get_header();
 
               <div class="our_partners">
               <?php if( have_rows('partners_logo', 'option') ): ?>
-                <ul class="our_container d-flex align-items-baseline"> 
+                <ul class="our_container customer-logos"> 
                   <?php while( have_rows('partners_logo', 'option') ): the_row(); 
                   $oplogo = get_sub_field('our_partners_logo', 'option'); ?>
 
