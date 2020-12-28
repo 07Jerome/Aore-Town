@@ -339,26 +339,24 @@ get_header();
             <div class="partners_title">
                 <h5>Our Partners</h5>
               </div>
-              <div class="our_partners">
-              <ul class="our_container d-flex align-items-baseline">
-                <li class="our_item">
-                  <a href="#" class="our_link"><img src="/aoretown/wp-content/uploads/2020/12/brand_1.png" alt="logo"></a>
-                </li>
-                <li class="our_item">
-                  <a href="#" class="our_link"><img src="/aoretown/wp-content/uploads/2020/12/brand_2.png" alt="logo"></a>
-                </li>
-                <li class="our_item">
-                  <a href="#" class="our_link"><img src="/aoretown/wp-content/uploads/2020/12/brand_3.png" alt="logo"></a>
-                </li>
-                <li class="our_item">
-                  <a href="#" class="our_link"><img src="/aoretown/wp-content/uploads/2020/12/brand_4.png" alt="logo"></a>
-                </li>
-                <li class="our_item">
-                  <a href="#" class="our_link"><img src="/aoretown/wp-content/uploads/2020/12/brand_5.png" alt="logo"></a>
-                </li>
-              </ul>
-            </div>
-        </div>
+
+              <div id="our_partners">
+              <?php if( have_rows('partners_logo', 'option') ): ?>
+                <ul class="our_container d-flex align-items-baseline"> 
+                  <?php while( have_rows('partners_logo', 'option') ): the_row(); 
+                  $oplogo = get_sub_field('our_partners_logo', 'option'); ?>
+
+
+                    <li class="our_item">
+                      <a href="#" class="our_link"><img src="<?php echo esc_url( $oplogo['url'] ); ?>" alt="logo"></a>
+                    </li> 
+
+
+                  <?php endwhile; ?> 
+                </ul>
+                <?php endif; ?>
+            </div> 
+          </div>
         </div>
       </div>
 </section>

@@ -227,34 +227,57 @@ $('.quote-container').mouseup(function(){
 //================ testimonial-slider End ==================//
 
 
-$('.partner_logo_container').slick({
-  slidesToShow: 6,
-  slidesToScroll: 1,
-  autoplay: true,
-  autoplaySpeed:500,
-  arrows: false,
-  dots: false,
-  pauseOnHover: false,
-  responsive: [
-    {
-      breakpoint: 768,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 1
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 1
-      }
-    }
-  ]
+// $('.our_container').slick({
+//   slidesToShow: 5,
+//   // slidesToScroll: 1,
+//   // autoplay: true,
+//   autoplaySpeed: 4000,
+//   arrows: false,
+//   dots: false,
+//   pauseOnHover: false,
+//   responsive: [
+//     {
+//       breakpoint: 768,
+//       settings: {
+//         arrows: false,
+//         centerMode: true,
+//         // centerPadding: '40px',
+//         slidesToShow: 1
+//       }
+//     },
+//     {
+//       breakpoint: 480,
+//       settings: {
+//         arrows: false,
+//         centerMode: true,
+//         // centerPadding: '40px',
+//         slidesToShow: 1
+//       }
+//     }
+//   ]
+// });
+
+$(document).ready(function(){
+  $('.our_container').slick({
+      slidesToShow: 4,
+      // slidesToScroll: 1,
+      // autoplay: true,
+      // autoplaySpeed: 1500,
+      arrows: false,
+      dots: false,
+      pauseOnHover: false,
+      responsive: [{
+          breakpoint: 768,
+          settings: {
+              slidesToShow: 4
+          }
+      }, {
+          breakpoint: 520,
+          settings: {
+              slidesToShow: 3
+          }
+      }]
+  });
 });
 
 

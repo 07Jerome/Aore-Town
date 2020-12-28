@@ -194,16 +194,27 @@
       // }
     }
   }
-  .our_partners {
+  #our_partners {
+    position: relative;
     justify-content: center;
     display: flex; 
     // margin-top: 15%;
-    .our_item {
-      margin-top: 20px;
-      &:not(:last-child){
-        margin-right: 60px;
-      }
-    } 
+    .our_container {
+      flex-wrap: wrap;
+      justify-content: center;
+      .our_item {
+        margin-top: 20px;
+        &:not(:last-child){
+          margin-right: 60px;
+        }
+        .our_link {
+          img {
+            width: 100%;
+          }
+        }
+      } 
+     }
+    
  }
  .partners_title {
   position: absolute;
@@ -218,11 +229,8 @@
   }
 }
  .our_partners {
-  position: relative;
-   .our_container {
-    flex-wrap: wrap;
-    justify-content: center;
-   }
+ 
+  
  }
 }
   
@@ -251,3 +259,5 @@
                        testimonial SECTION end
   ==================================================================
   */
+
+
