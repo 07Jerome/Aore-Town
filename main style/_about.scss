@@ -1,0 +1,129 @@
+
+    /*
+  ==================================================================
+                        ABOUT
+  ==================================================================
+  */
+  
+  .page-id-10 {
+    #main_header{
+      background-color: #241e1f;
+      height: 100%;
+    }
+  }  
+    #about{
+      background-image: linear-gradient(to left, #20291f 40%, white 40%);
+      // padding: 5% 0;
+    
+        .title_container {
+
+          padding-left: 0%;
+          padding-right: 5%;
+          margin: 7% 0;
+
+          h4{
+              font-family: 'Oxygen', sans-serif;
+              font-size: 16px; 
+              letter-spacing: 15px;
+              color: #d7b017;
+             }
+          h2 {
+              font-family: 'Castoro', serif;
+              font-size: 50px;
+              color: #241e1f;
+             }
+          p {
+              font-family: 'Oxygen', sans-serif;
+              font-size: 16px; 
+              font-weight: 500;
+              color: #241e1f;
+            }
+        }
+        .about_years{
+            background-color: #20291f;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+             padding-left: 2%;
+             padding-right: 12%;
+            text-align: center;
+            padding-bottom: 5%;
+            h2{
+              font-family: 'Oxygen', sans-serif; 
+              font-size: 215px;
+              font-weight: 700;
+              color: #d7b017;
+              margin: -15px;
+            }
+            h3{
+              font-family: Handletters;
+              font-size: 80px;
+              color: #d7b017;
+              margin: 0;
+            }
+            p{
+              font-family: 'Oxygen', sans-serif;  
+              font-size: 24px;
+              font-weight: 500;
+              color: #fff;
+            }
+        }
+          .service_container {
+              display: flex;
+
+            .service_img {
+                // margin: 0 20px 0 0; 
+                img{    
+                    height: auto;
+                    width: 50px;
+                    margin-top: 15px;
+                }
+            }
+              h5 { 
+                font-family: 'Castoro', serif;
+                font-size: 18px;
+                font-weight: 700;
+                color: #20291f;
+            }
+            p {
+                font-family: 'Oxygen', sans-serif; 
+                color: #20291f; 
+                font-size: 16px;
+                font-weight: 500;
+            }
+            .service_content {
+              padding: 0 20px;
+           }
+
+          }
+          
+        }
+     
+
+   /*
+==================================================================
+                      ABOUT END
+==================================================================
+*/
+#post-10 {
+  .entry-content {
+    h4 {
+      font-family: 'Oxygen', sans-serif;
+      font-size: 16px; 
+      letter-spacing: 15px;
+      color: #d7b017;
+     }
+     h2 {
+      font-family: 'Castoro', serif;
+      font-size: 50px;
+      color: #241e1f;
+     }
+     p {
+      font-family: 'Oxygen', sans-serif;
+      font-size: 16px; 
+      font-weight: 500;
+      color: #241e1f;
+    }
+  }
+}

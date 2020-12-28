@@ -1,0 +1,253 @@
+ 
+  /*
+  ==================================================================
+                       testimonial SECTION
+  ==================================================================
+  */
+  #testimonial {
+    padding: 5% 0;
+  .content {
+    margin: auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 1200px;
+    min-width: 300px;
+  }
+  
+  .slick-slider {
+    margin: 30px auto 50px;
+  }
+  
+  .slick-prev,
+  .slick-next {
+   display: none !important;
+   opacity: 0;
+    
+    path {
+      fill: rgba(255,255,255, 0.4);
+    }
+    
+    &:hover {
+      path {
+        fill: #FFFFFF;
+      }
+    }
+  }
+  
+  // .slick-prev {
+  //   left: -35px;
+  // }
+  
+  // .slick-next {
+  //   right: -35px;
+  // }
+  
+  .slick-prev:before, 
+  .slick-next:before {
+    content: none;
+  }
+  
+  // .slick-dots li button:before {
+  //   color: rgba(255,255,255, 0.4);
+  //   opacity: 1;
+  //   font-size: 8px;
+  // }
+  
+  // .slick-dots li.slick-active button:before {
+  //   color: #FFFFFF;
+  // }
+
+
+
+  /*
+  ==================================================================
+               DOts         
+  ==================================================================
+  */
+  .slick-dots {
+    text-align: center;
+    padding-top: 15px;
+
+    /*added*/
+    position: absolute;
+    top: 65%;
+    right: 15%;
+
+    li {
+      display: inline-block;
+      vertical-align: top;
+      margin: 0 8px;
+
+      button {
+        /* width: 16px;
+        height: 16px; */
+
+        width: 10px;
+        height: 10px;
+        padding: 0px;
+        border: none;
+        cursor: pointer;
+        border-radius: 50%;
+        // border: 2px solid #fff;
+        box-shadow: 0 0 0 0 transparent;
+        vertical-align: middle;
+        color: #fff0;
+        background-color:#d7b017;
+        -webkit-transition: all .3s ease;
+        transition: all .3s ease;
+        opacity: .4;
+
+        &:focus {
+          outline: none;
+        }
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+
+      &.slick-active button {
+        border-color: #2d3042;
+        box-shadow: 0 0 0 2px #fff;
+        border: #d7b017 !important;
+        opacity: 1;
+      }
+    }
+  }
+
+/*
+ ==================================================================
+              DOts   END       
+ ==================================================================
+ */
+
+  .quote-container {
+    min-height: 200px;
+    color: #666666;
+    font-size: 36px;
+    margin: 0 20px;
+    position: relative;
+    
+    &:hover {
+      cursor: grab;
+    }
+
+    .test_container {
+      display: flex;
+      margin: 5%;
+      padding-left: 100px;
+
+      .test_title {
+        margin-top: 0px;
+        margin-left: 10px;
+
+        h2.name_title {
+          a {
+            color: #fff;
+            font-family: 'Castoro', serif; 
+            font-size: 15px;
+            color: #fff;
+           }
+        }
+      
+        p {
+          font-family: 'Oxygen', sans-serif;
+          font-size: 15px; 
+          color: #d7b017;
+        }
+      }
+    }
+   
+    
+    .portrait {
+      height: auto;
+      width: 100px;
+      border-radius: 10%;
+      overflow: hidden;
+      overflow: hidden;
+      
+      img {
+        display: block;
+        height: auto;
+        width: 100%;
+      }
+    }
+    
+    .quote {
+      font-family: 'Oxygen', sans-serif;
+      font-size: 30px;
+      color: white;
+      line-height: 1.4 !important;
+      text-align: center;
+      padding: 0 10%;
+
+      // cite {
+      //   display: block;
+      //   font-size: 14px;
+        
+      //   span {
+      //     font-size: 16px;
+      //     font-style: normal;
+      //     letter-spacing: 1px;
+      //     text-transform: uppercase;
+      //   }
+      // }
+    }
+  }
+  .our_partners {
+    justify-content: center;
+    display: flex; 
+    // margin-top: 15%;
+    .our_item {
+      margin-top: 20px;
+      &:not(:last-child){
+        margin-right: 60px;
+      }
+    } 
+ }
+ .partners_title {
+  position: absolute;
+  bottom: 115%;
+  right: 0;
+  left: 22%;
+  h5 { 
+    color: #d7b017;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 800;
+    font-size: 15px;
+  }
+}
+ .our_partners {
+  position: relative;
+   .our_container {
+    flex-wrap: wrap;
+    justify-content: center;
+   }
+ }
+}
+  
+  
+  @-webkit-keyframes gradient {
+      0%{background-position:5% 0%}
+      50%{background-position:96% 100%}
+      100%{background-position:5% 0%}
+  }
+  @-moz-keyframes gradient {
+      0%{background-position:5% 0%}
+      50%{background-position:96% 100%}
+      100%{background-position:5% 0%}
+  }
+  @keyframes gradient { 
+      0%{background-position:5% 0%}
+      50%{background-position:96% 100%}
+      100%{background-position:5% 0%}
+  }
+
+
+
+
+  /*
+  ==================================================================
+                       testimonial SECTION end
+  ==================================================================
+  */

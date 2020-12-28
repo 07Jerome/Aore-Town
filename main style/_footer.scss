@@ -1,0 +1,83 @@
+
+  /*
+  ==================================================================
+                         FOOTER SECTION
+  ==================================================================
+  */
+  
+  ._main_footer {
+    /* background-image: url(/aore-town/assets/img/aore_logo.png); */
+    background-color: #20291f;
+    height: 100%;
+    padding: 5% 0;
+    
+  
+    form {
+      .footer_search {
+        width: 25%;
+        padding: 10px;
+        border: none;
+      }
+  
+      .btn_submit {
+        background-color: #d7b017;
+        color: #ffffff;
+        width: 10%;
+        padding: 10px;
+        cursor: pointer;
+        border: none;
+  
+        &:hover {
+          background-color: #ffffff;
+          color: #20291f;
+        }
+      }
+    }
+  
+    .footer_logo_container p {
+      font-family: 'Oxygen', sans-serif;
+      font-size: 16px;
+      color: #ffffff;
+      margin-top: 30px;
+      margin-bottom: 20px;
+    }
+  
+    .social_icons .icon_container {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 30px;
+  
+      .icon-item {
+        &:not(:last-child) {
+          margin-right: 20px;
+        }
+  
+        .icon-link {
+          i {
+            font-size: 25px;
+            color: #d7b017;
+          }
+  
+          &:hover i {
+            color: #ffffff;
+          }
+        }
+      }
+    }
+  
+    .copy_right_footer {
+      font-family: 'Oxygen', sans-serif;
+      font-size: 16px;
+      margin-top: 30px;
+      color: #ffffff;
+    }
+  }
+
+
+  .single {
+    #main_header{
+      background-color: #241e1f;
+      height: 100%;
+    }
+  }

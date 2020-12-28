@@ -1,0 +1,141 @@
+
+  /*
+  ==================================================================
+                       contact_us SECTION
+  ==================================================================
+  */
+  
+  
+  #contact_us {
+    padding: 5% 0;
+  .form_contact_container {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20% 0;
+
+    .contact_text_box{
+      margin-bottom: 30px;
+      h2 {
+        font-family: Handletters;
+        font-size: 160px;
+        color: #241e1f;
+          margin: 0;
+      }
+      h4 {
+        font-family: 'Oxygen', sans-serif;
+        font-size: 20px; 
+        color: #d7b017; 
+        margin: 0;
+      }
+    }
+
+    #contact-form {
+      background-color: #241e1f;
+      padding: 10% 5%;
+      border-radius: 20px;
+      width: 90%;
+      height: 100%;
+
+      .form-group {
+        input {
+          background: transparent;
+          color: #fff;
+          &::placeholder {
+            font-family: 'Oxygen', sans-serif;
+            font-size: 14px;
+            color: #fff;
+          }
+        }
+      }
+    }
+    
+  .margin-top-25 {
+    margin-top: 45px;
+  }
+  
+  .form-title {
+    padding: 25px;
+    font-size: 30px;
+    font-weight: 300;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  }
+  
+  .form-group .form-control {
+    // -webkit-box-shadow: none;
+    border-bottom: 1px;
+    border-style: none none solid none;
+    border-radius:0; 
+    border-color: #464243;
+  }
+  
+  .form-group .form-control:focus {
+    box-shadow: none;
+    border-width: 0 0 2px 0;
+    border-color: #d7b017;
+    
+  }
+  
+  // textarea {
+  //   resize: none;
+  // }
+  
+  .btn-mod.btn-large {
+      height: auto;
+      padding: 10px 35px;
+      font-size: 15px;
+  }
+  
+  .btn-mod.btn-border {
+      color: #fff;
+      border: 1px solid #d7b017;
+      background: #d7b017;
+      font-family: 'Oxygen';
+      font-size: 16px;
+      padding: 5px 30px;
+  }
+  
+  .btn-mod, a.btn-mod {
+    font-family: 'Oxygen', sans-serif;
+            font-size: 14px;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      padding: 10px 30px;
+      background: rgba(34,34,34, .9);
+      border: 1px solid transparent;
+      // font-size: 11px;
+      font-weight: 400;
+      // text-transform: uppercase;
+      text-decoration: none;
+      // letter-spacing: 2px;
+      -webkit-border-radius: 0;
+      -moz-border-radius: 0;
+      border-radius: 0;
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none;
+      -webkit-transition: all 0.2s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+      -moz-transition: all 0.2s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+      -o-transition: all 0.2s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+      -ms-transition: all 0.2s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+      transition: all 0.2s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+  }
+  
+  .btn-mod.btn-border:hover, .btn-mod.btn-border:active, .btn-mod.btn-border:focus, .btn-mod.btn-border:active:focus {
+      color: #241e1f;
+      // border-color: #000;
+      background: #a88b15;
+      outline: none;
+  }
+  
+
+  }
+}
+  /*
+  ==================================================================
+                       contact_us SECTION end
+  ==================================================================
+  */

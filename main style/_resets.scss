@@ -1,0 +1,26 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    // color: #ffffff;
+  }
+  
+  ul {
+    list-style: none;
+    margin: 0;
+  }
+  a {
+    text-decoration: none;
+    &:hover {
+      text-decoration: none;
+    }
+    &:visited {
+      color: rgb(95, 95, 95);
+    }
+  }
+  .post, .page {
+    margin: 0;
+  }
+  .container {
+    max-width: 75%;
+  }

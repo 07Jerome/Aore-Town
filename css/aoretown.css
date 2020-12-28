@@ -1,0 +1,441 @@
+@import url('https://fonts.googleapis.com/css2?family=Castoro:ital@0;1&family=Oxygen:wght@300;400;700&display=swap');
+/* @import url(/aore-town/css/slider.css); */
+@font-face {
+    font-family: Handletters;
+    src: url(/aoretown/wp-content/themes/aore-town/assets/handletters/Handletters.otf);
+  }
+  body{
+    background-color: #241e1f;
+  }
+  *{
+    padding: 0;
+    margin: 0; 
+    box-sizing: border-box;
+    color: #ffffff;
+  }
+  ul {
+    list-style: none; 
+    margin: 0;
+  }
+
+/*
+    Slider and Header
+*/
+.main-slider {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  min-height: 8vw;
+  /* margin-bottom: 50px; */
+
+  /* added */
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 1.2s ease;
+  transition: all 1.2s ease;
+}
+
+.main-slider.slick-initialized {/* added */
+  opacity: 1;
+  visibility: visible;
+}
+
+.main-slider .item figure {
+margin: 0;
+/* added */
+position: relative;
+height: 100%;
+}
+
+.main-slider .slide-image.slide-media {/* added */
+  background-size: cover !important;
+  height: 100vh;
+  position: relative;
+  margin-left: 23%;
+}
+
+.main-slider .slide-image img {
+  position: absolute;
+  height: 70%;
+  width: 35%;
+  bottom: 8%;
+  left: -15%;
+  box-shadow: 20px 16px 20px 0px #000000c7;
+/* added */
+  /* opacity: 0; */
+  /* height: 100%; */
+  background-size: cover;
+  background-position: center;
+  -webkit-transition: all .8s ease;
+  transition: all .8s ease;
+}
+.main-slider .slick-slide .slide-image img.show {/* added */
+  opacity: 1;
+}
+/* .main-slider .slick-slide .image-entity {
+  opacity: 0;
+  visibility: hidden; 
+} */
+
+.main-slider .slick-slide.slick-active .caption {/* added */
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition: all 0.7s cubic-bezier(0.32, 0.34, 0, 1.62) 0.6s;
+  transition: all 0.7s cubic-bezier(0.32, 0.34, 0, 1.62) 0.6s;
+}
+.main-slider .slick-slide.slick-active {/* added */
+  z-index: 1;
+}
+.main-slider .slick-slide .slide-image.show {/* added */
+  opacity: 1;
+}
+
+.main-slider .slick-slide, .slick-slide::before, .caption {/* added */
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.main-slider .slick-slide::before {/* added */
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.main-slider .slick-slide {/* added */
+  position: relative;
+  height: 100vh;
+}
+.main-slider .slick-slide::before {/* added */
+  background-color: #000;
+  opacity: .3;
+  z-index: 1;
+}
+.main-slider .slick-slide .slide-image {
+  opacity: 0;
+  background-position: center;
+  -webkit-transition: all .8s ease;
+  transition: all .8s ease;
+}
+
+
+.main-slider figcaption.caption {
+  position: absolute;
+  bottom: 8%;
+  right: 30%;
+  color: #fff;
+  /* added */
+  margin: 0;
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: .02em;
+  opacity: 0;
+  z-index: 1;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  -webkit-transform: translateY(100px);
+          transform: translateY(100px);
+}
+.main-slider figcaption.caption .content h1 {
+  font-family: Handletters;
+  font-size: 150px;
+  color: #d7b017;
+}
+.main-slider figcaption.caption .content h3 {
+  font-family: 'Oxygen', sans-serif;
+  font-weight: 300;
+  font-size: 30px;
+}
+.main-slider figcaption.caption .content h4 {
+  font-family: 'Oxygen', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+}
+.main-slider figcaption.caption .btn_view_now a{
+  font-family: 'Oxygen', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  color: #ffffff;
+  border: 3px solid #ffff;
+  padding: 10px 31px;
+  border-radius: 0;
+  margin-top: 35px;
+}
+.main-slider figcaption.caption .btn_view_now:hover a{
+  background-color: #d7b017;
+  border: 3px solid #d7b017;
+}
+
+
+  /*
+  ==================================================================
+               slide animation Control         
+  ==================================================================
+  */
+
+
+.main-slider .slick-slide .slide-media {
+  -webkit-animation: slideOut 0.4s cubic-bezier(0.4, 0.29, 0.01, 1);
+          animation: slideOut 0.4s cubic-bezier(0.4, 0.29, 0.01, 1);
+}
+.main-slider .slick-slide.slick-active {
+  z-index: 1;
+}
+.main-slider .slick-slide.slick-active .slide-media {
+  -webkit-animation: slideIn 2.4s cubic-bezier(0.4, 0.29, 0.01, 1);
+          animation: slideIn 2.4s cubic-bezier(0.4, 0.29, 0.01, 1);
+}
+.main-slider .slick-slide.slick-active .caption {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition: all 0.7s cubic-bezier(0.32, 0.34, 0, 1.62) 0.6s;
+  transition: all 0.7s cubic-bezier(0.32, 0.34, 0, 1.62) 0.6s;
+}
+
+  /*
+  ==================================================================
+               slide animation Control  END       
+  ==================================================================
+  */
+
+  /*
+  ==================================================================
+               DOts         
+  ==================================================================
+  */
+
+  .main-slider .slick-dots {
+  text-align: center;
+  padding-top: 15px;
+  /*added*/
+  position: absolute;
+  top: 90%;
+  right: 10%;
+}
+.main-slider .slick-dots li {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 8px;
+}
+.main-slider .slick-dots li button {
+  /* width: 16px;
+  height: 16px; */
+
+  width: 35px;
+  height: 35px;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  box-shadow: 0 0 0 0 transparent;
+  vertical-align: middle;
+  color: #fff;
+  background-color: #fff;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  opacity: .4;
+}
+.main-slider .slick-dots li button:focus {
+  outline: none;
+}
+.main-slider .slick-dots li button:hover {
+  opacity: 1;
+}
+.main-slider .slick-dots li.slick-active button {
+  border-color: #2d3042;
+  box-shadow: 0 0 0 2px #fff;
+  opacity: 1;
+}
+
+ /*
+  ==================================================================
+               DOts   END       
+  ==================================================================
+  */
+   /*
+  ==================================================================
+               keyframes      
+  ==================================================================
+  */
+
+  
+@-webkit-keyframes slideIn {
+  from {
+    -webkit-filter: blur(15px);
+            filter: blur(15px);
+  }
+  to {
+    -webkit-filter: blur(0);
+            filter: blur(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    -webkit-filter: blur(15px);
+            filter: blur(15px);
+  }
+  to {
+    -webkit-filter: blur(0);
+            filter: blur(0);
+  }
+}
+@-webkit-keyframes slideOut {
+  from {
+    -webkit-filter: blur(0);
+            filter: blur(0);
+  }
+  to {
+    -webkit-filter: blur(15px);
+            filter: blur(15px);
+  }
+}
+@keyframes slideOut {
+  from {
+    -webkit-filter: blur(0);
+            filter: blur(0);
+  }
+  to {
+    -webkit-filter: blur(15px);
+            filter: blur(15px);
+  }
+}
+
+   /*
+  ==================================================================
+               keyframes  END     
+  ==================================================================
+  */
+
+
+  /*
+  ==================================================================
+                  MAIN HEADER      
+  ==================================================================
+  */
+
+  #main_header{
+    /* background-color: #241e1f; */
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    padding: 0 5%;
+    text-align: left;
+    z-index: 1;
+  }
+
+  .home #main_header {
+    position: absolute;
+  }
+
+  #main_header .navbar .contact_number a {
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+   color: #ffffff;
+  }
+  #main_header .navbar .navbar-nav .nav-item .nav-link {
+    color: #ffffff;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+  }
+
+ /*
+  ==================================================================
+                        MAIN HEADER END
+  ==================================================================
+  */
+
+   /*
+  ==================================================================
+                        ABOUT
+  ==================================================================
+  */
+
+/* 
+  #about{
+    background-color: #ffffff;
+  } */
+
+
+
+
+
+     /*
+  ==================================================================
+                        ABOUT END
+  ==================================================================
+  */
+
+  /*
+  ==================================================================
+                         FOOTER SECTION
+  ==================================================================
+  */
+  ._main_footer{
+    /* background-image: url(/aore-town/assets/img/aore_logo.png); */
+    background-color: #20291f;
+    height: 50vh;
+  }
+
+
+  ._main_footer form .footer_search {
+    width: 25%;
+    padding: 10px;
+    border: none;
+  }
+  ._main_footer form .btn_submit{
+    background-color: #d7b017;
+    color: #ffffff;
+    width: 10%;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+  }
+  ._main_footer form .btn_submit:hover{
+    background-color: #ffffff;
+    color: #20291f;
+  }
+
+._main_footer .footer_logo_container p {
+  font-family: 'Oxygen', sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+._main_footer .social_icons .icon_container{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+._main_footer .social_icons .icon_container .icon-item:not(:last-child) {
+  margin-right: 30px;
+  }
+._main_footer .social_icons .icon_container .icon-item .icon-link i {
+  font-size: 25px;
+  color: #d7b017;
+}
+._main_footer .social_icons .icon_container .icon-item .icon-link:hover i {
+  color: #ffffff;
+  }
+._main_footer .copy_right_footer {
+  font-family: 'Oxygen', sans-serif;
+  font-size: 16px;
+  margin-top: 30px;
+   color: #ffffff;
+  }
+
+    /*
+  ==================================================================
+                         FOOTER SECTION END
+  ==================================================================
+  */

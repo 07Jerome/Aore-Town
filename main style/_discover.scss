@@ -1,0 +1,101 @@
+
+     /*
+  ==================================================================
+                        DISCOVER SECTION
+  ==================================================================
+  */
+  #discover {
+    background-color: #f1e7dd;
+    padding: 5% 0;
+    // padding: 0 5%;
+  .title_container {
+      h4 {
+          font-family: 'Oxygen', sans-serif;
+          font-size: 16px; 
+          letter-spacing: 15px;
+          color: #d7b017;  
+      }
+      h2 {
+          font-family: 'Castoro', serif;
+          font-size: 50px;
+          color: #241e1f;
+      }
+  }
+  .text_box{
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // margin-top: 4.6%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 30vw;
+    .discover_text{
+      // padding-left: 5%;
+      // padding-bottom: 5%;
+      // padding-right: 20%;
+
+      padding-left: 5%;
+      padding-right: 20%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+     
+      p {
+        color: #241e1f;
+        letter-spacing: 1.2px;
+        font-size: 20px;
+        font-family: 'Oxygen';
+        font-weight: 500;
+      }
+    }
+    .discover_info {
+      // height: 300px;
+      // width: 100%;
+      // background-color: #d7b017;
+      // text-align: center;
+      // padding: 7rem;
+
+      width: 100%;
+      background-color: #d7b017;
+      text-align: center;
+      padding: 40px 24%;
+      
+      
+      h2{
+        color: #241e1f;
+        font-family: 'Castoro';
+        font-size: 40px;
+      }
+    }
+
+  }
+  .text_box2{
+    display: contents;
+    // padding: 0 5%;
+    .discover_text2 {
+      // margin-top: 15%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0px 25px;
+      // padding: 0 10%;
+      // margin-top: 20px;
+      p {
+        color: #241e1f;
+        letter-spacing: 1.2px;
+        font-size: 20px;
+        font-family: 'Oxygen';
+        font-weight: 500;
+        margin-bottom: 5%; 
+      }
+    }  
+  }
+}
+  /*
+==================================================================
+                      DISCOVER SECTION END
+==================================================================
+*/

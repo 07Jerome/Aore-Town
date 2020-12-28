@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Castoro:ital@0;1&family=Oxygen:wght@300;400;700&display=swap');
+@font-face {
+    font-family: Handletters;
+    src: url(/aoretown/wp-content/themes/aore-town/assets/handletters/Handletters.otf);
+  }
+  @import './variables';
+  @import './resets';
+  @import './navbar';
+  @import './hero_banner';
+  @import './about';
+  @import './discover';
+  @import './featured';
+  @import './blogs';
+  @import './testimonial';
+  @import './contactUs';
+  @import './footer';
+  @import './responsive';
+
+  // Contact form 
+.form-control-msg {
+	display: none;
+}
+
+.has-error {
+	.form-control-msg {
+		display: block;
+	}
+}
+
+.js-show-feedback {
+	display: block;
+}
