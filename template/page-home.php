@@ -340,7 +340,7 @@ get_header();
                 <h5>Our Partners</h5>
               </div>
 
-              <div id="our_partners">
+              <div class="our_partners">
               <?php if( have_rows('partners_logo', 'option') ): ?>
                 <ul class="our_container d-flex align-items-baseline"> 
                   <?php while( have_rows('partners_logo', 'option') ): the_row(); 

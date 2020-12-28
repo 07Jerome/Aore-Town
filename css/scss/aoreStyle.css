@@ -1263,7 +1263,7 @@ a:visited {
   padding: 0 10%;
 }
 
-#testimonial #our_partners {
+#testimonial .our_partners {
   position: relative;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -1273,7 +1273,7 @@ a:visited {
   display: flex;
 }
 
-#testimonial #our_partners .our_container {
+#testimonial .our_partners .our_container {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: center;
@@ -1281,11 +1281,11 @@ a:visited {
           justify-content: center;
 }
 
-#testimonial #our_partners .our_container .our_item {
+#testimonial .our_partners .our_container .our_item {
   margin-top: 20px;
 }
 
-#testimonial #our_partners .our_container .our_item:not(:last-child) {
+#testimonial .our_partners .our_container .our_item:not(:last-child) {
   margin-right: 60px;
 }
 
