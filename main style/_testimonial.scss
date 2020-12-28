@@ -207,14 +207,14 @@
         &:not(:last-child){
           margin-right: 60px;
         }
-        .our_link {
-          img {
-            width: 100%;
-          }
-        }
+        // .our_link {
+        //   img {
+        //     width: 100%;
+        //   }
+        // }
       } 
      }
-    
+   
  }
  .partners_title {
   position: absolute;
@@ -228,10 +228,7 @@
     font-size: 15px;
   }
 }
- .our_partners {
- 
-  
- }
+
 }
   
   
