@@ -37,6 +37,12 @@ if( function_exists('acf_add_options_page') ) {
         'page_title'     	=> 'Theme Sections Title Settings',
         'menu_title'    	=> 'Sections Title',
         'parent_slug'    	=> 'theme-general-settings',
+	));
+
+	acf_add_options_sub_page(array(
+        'page_title'     	=> 'Theme Our Partners Settings',
+        'menu_title'    	=> 'Our Partners',
+        'parent_slug'    	=> 'theme-general-settings',
     ));
 
     acf_add_options_sub_page(array(
