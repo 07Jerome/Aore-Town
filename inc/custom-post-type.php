@@ -341,3 +341,44 @@ function aore_save_phone_data( $post_id ) {
 	
 }
 add_action('save_post', 'aore_save_phone_data');
+
+
+
+
+add_action('add_meta_boxes', 'add_attachment_metaboxes');
+
+function add_attachment_metaboxes() {
+    add_meta_box('attachment_metaboxes', 'More Description', 'custom_attachment_metaboxes_func', 'attachment', 'normal', 'default');
+}
+function custom_attachment_metaboxes_func() 
+{
+    global $post;    
+    echo '<input type="hidden" name="meta_data_noncename" id="meta_data_noncename" value="'.wp_create_nonce('my_custom_nonce').'" />';    
+    $metadata = get_post_meta($post -> ID, 'meta_data', true);       
+     ?>
+    <div>
+        <table>
+            <tr valign="top">
+                <td>
+                    <input type="text" name="meta_data" id="meta_data" size="70" value="<?php echo $metadata; ?>" />                
+                </td> 
+            </tr> 
+        </table>         
+    </div>
+    <?php  
+}
+function save_attachment_meta($post_id) {   
+    if (!wp_verify_nonce($_POST['meta_data_noncename'],'my_custom_nonce')) 
+    {
+        return $post -> ID;
+    }    
+    if (!current_user_can('edit_post', $post -> ID))
+    {
+            return $post -> ID;    
+    }
+    if(isset($_POST["meta_data"]))
+    {       
+        update_post_meta($post_id, "meta_data", $_POST["meta_data"]);
+    }   
+}
+add_action('edit_attachment', 'save_attachment_meta'); 
