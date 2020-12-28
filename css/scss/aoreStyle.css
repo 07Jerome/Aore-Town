@@ -1289,6 +1289,10 @@ a:visited {
   margin-right: 60px;
 }
 
+#testimonial .our_partners .our_container .our_item .our_link img {
+  width: 100%;
+}
+
 #testimonial .partners_title {
   position: absolute;
   bottom: 115%;
